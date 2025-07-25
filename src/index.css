@@ -1,13 +1,224 @@
+/* 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  text-align: center;
+  background-color: #f0f4f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  font-size: 2.5rem;
+  margin-top: 20px;
+  color: #333;
 }
+
+hr {
+  width: 600px;
+  border: 1px solid #ccc;
+  margin: 20px auto;
+}
+
+.app {
+  padding: 20px;
+}
+
+#box {
+  width: 450px;
+  height: 450px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border: 2px solid #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.tile {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-sizing: border-box;
+  border: 1px solid #aaa;
+}
+
+
+.tile:nth-child(9n + 1) {
+  border-left: 2px solid #333;
+}
+.tile:nth-child(3n) {
+  border-right: 2px solid #333;
+}
+.tile:nth-child(-n + 9) {
+  border-top: 2px solid #333;
+}
+.tile:nth-child(n + 19):nth-child(-n + 27),
+.tile:nth-child(n + 46):nth-child(-n + 54) {
+  border-bottom: 2px solid #333;
+}
+
+
+.input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.input:focus {
+  outline: none;
+  background-color: #e6f7ff;
+}
+
+
+input.valid {
+  color: green;
+}
+
+input.invalid {
+  color: red;
+}
+
+
+.input.fixed {
+  background-color: #f3f3f3;
+  color: #000;
+}
+
+
+.time,
+.errors,
+.hint {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.time_sec {
+  color: red;
+  font-weight: bold;
+}
+
+.hint_count {
+  color: green;
+  font-weight: bold;
+}
+
+#error {
+  color: red;
+}
+
+
+button {
+  margin: 5px;
+  padding: 10px 18px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#solve {
+  background-color: #28a745;
+  color: white;
+}
+
+#reset {
+  background-color: #dc3545;
+  color: white;
+}
+
+#clear {
+  background-color: #343a40;
+  color: white;
+}
+
+#undo {
+  background-color: #007bff;
+  color: white;
+}
+
+#hint {
+  background-color: #ffc107;
+  color: black;
+}
+
+#pause {
+  background-color: #fd7e14;
+  color: white;
+}
+
+#resume {
+  background-color: #20c997;
+  color: white;
+}
+
+
+.difficulty,
+.sudoku-type-select {
+  margin: 15px 0;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+select {
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+
+.rules {
+  list-style: none;
+  text-align: left;
+  max-width: 500px;
+  margin: 10px auto;
+  background-color: #fff7e6;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ffe8a1;
+}
+
+.rules li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #5a3e1b;
+}
+
+
+.pause-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pause-message {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+#icon {
+  padding-left: 40%;
+  padding-top: 20%;
+} */
