@@ -4,7 +4,7 @@ const DifficultySelector = ({ difficulty, setDifficulty }) => {
   return (
     <div className='difficulty'>
       <label>
-        Difficulty:
+        {/* Difficulty: */}
         <select className='diff_list'
           value={difficulty}
           onChange={(e) => setDifficulty(e.target.value)}
