@@ -2,7 +2,7 @@ import React from 'react';
 import Tile from './Tile';
 const SudokuBoard = ({ puzzle, currentInput, onInputChange, selectedCell, setSelectedCell, sudokuType  }) => {
 const isHighlighted = (r, c) => {
-  if (sudokuType === "samurai") return false;
+  // if (sudokuType === "samurai") return false;
   if (selectedCell.row === null || selectedCell.col === null) return false;
    const inRow = r === selectedCell.row;
    const inCol = c === selectedCell.col;

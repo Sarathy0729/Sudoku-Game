@@ -342,6 +342,9 @@ button {
 }
 
 
+.tile.highlight input {
+  background-color: rgb(200, 240, 255);
+}
 
 
 

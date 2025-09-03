@@ -558,6 +558,7 @@ useEffect(() => {
   <div className="samurai-container">
     <div className="samurai-row">
       <SudokuBoard 
+       gridKey="gridTopLeft"
         puzzle={samuraiGrids.gridTopLeft}
         currentInput={samuraiGrids.gridTopLeft}
         onInputChange={(e, r, c) => handleInputChange(e, r, c, "gridTopLeft")}
@@ -566,6 +567,7 @@ useEffect(() => {
         sudokuType={sudokuType}
       />
       <SudokuBoard 
+       gridKey="gridTopRight"
         puzzle={samuraiGrids.gridTopRight}
         currentInput={samuraiGrids.gridTopRight}
         onInputChange={(e, r, c) => handleInputChange(e, r, c, "gridTopRight")}
@@ -576,6 +578,7 @@ useEffect(() => {
     </div>
     <div className="samurai-center">
       <SudokuBoard 
+       gridKey="gridTopCenter"
         puzzle={samuraiGrids.gridCenter}
         currentInput={samuraiGrids.gridCenter}
         onInputChange={(e, r, c) => handleInputChange(e, r, c, "gridCenter")}
@@ -586,6 +589,7 @@ useEffect(() => {
     </div>
     <div className="samurai-row">
       <SudokuBoard 
+       gridKey="gridBottomLeft"
         puzzle={samuraiGrids.gridBottomLeft}
         currentInput={samuraiGrids.gridBottomLeft}
         onInputChange={(e, r, c) => handleInputChange(e, r, c, "gridBottomLeft")}
@@ -594,6 +598,7 @@ useEffect(() => {
         sudokuType={sudokuType}
       />
       <SudokuBoard 
+       gridKey="gridBottomRight"
         puzzle={samuraiGrids.gridBottomRight}
         currentInput={samuraiGrids.gridBottomRight}
         onInputChange={(e, r, c) => handleInputChange(e, r, c, "gridBottomRight")}
